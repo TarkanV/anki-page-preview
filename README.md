@@ -37,4 +37,3 @@ Bring **Obsidian-style interactive page, section, and block previews** straight 
 ---
 
 ```markdown
-![[ui-wireframe.png]] ^wireframe

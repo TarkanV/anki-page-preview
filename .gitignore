@@ -10,5 +10,6 @@ __pycache__/
 # Anki build artifacts
 *.ankiaddon
 meta.json
+
 .tmp.driveupload
 .tmp.drivedownload
