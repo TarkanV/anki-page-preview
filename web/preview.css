@@ -1,0 +1,142 @@
+/* ============================================================
+   THEME PALETTES (Automatic Light & Dark Mode)
+   ============================================================ */
+
+/* 1. Default Light Mode Palette */
+/* ============================================================
+   THEME PALETTES
+   ============================================================ */
+
+/* 1. Light Mode */
+:root, .theme-light {
+    --preview-bg: #cecece;
+    --preview-fg: #2e333a;
+    --preview-border: #d0d7de;
+    --preview-shadow: rgba(0, 0, 0, 0.16);
+    --preview-link: #0969da;
+    --preview-link-hover: #1f883d;
+    --preview-scrollbar-thumb: #d0d7de;
+    --preview-scrollbar-track: transparent;
+    --preview-badge-fg: #8c959f;
+    --preview-divider: rgba(0, 0, 0, 0.08);
+    --preview-depth-2: #0969da;
+    --preview-depth-3: #1a7f37;
+}
+
+/* 2. Dark Mode (Soft, non-distracting colors) */
+body.night_mode, 
+body.nightMode, 
+:root[class*="night"],
+.theme-dark {
+    --preview-bg: #1e1e2e;
+    --preview-fg: #cdd6f4;
+    --preview-border: #45475a;
+    --preview-shadow: rgba(0, 0, 0, 0.7);
+    --preview-link: #89b4fa;
+    --preview-link-hover: #b4befe;
+    --preview-scrollbar-thumb: #585b70;
+    --preview-scrollbar-track: transparent;
+    --preview-badge-fg: #6c7086; /* Restored to soft, muted slate */
+    --preview-divider: rgba(255, 255, 255, 0.08);
+    --preview-depth-2: #89b4fa;
+    --preview-depth-3: #a6e3a1;
+}
+
+/* ============================================================
+   FIELD BADGES & DIVIDERS (Subtle & Passive)
+   ============================================================ */
+.anki-preview-field-badge {
+    display: block;
+    font-size: var(--preview-badge-font-size, 8.5px);
+    font-weight: 500; /* Normal weight, no loud bolding */
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--preview-badge-fg);
+    opacity: var(--preview-badge-opacity, 0.45); /* Muted, faint presentation */
+    margin-bottom: 2px;
+    user-select: none;
+}
+
+.anki-preview-field-divider {
+    border: 0;
+    height: 1px;
+    background: var(--preview-divider);
+    margin: 8px 0 10px 0;
+}
+
+/* ============================================================
+   INTERACTIVE WIKILINKS
+   ============================================================ */
+.anki-preview-link {
+    color: var(--preview-link);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--preview-link);
+    cursor: pointer;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.anki-preview-link:hover {
+    color: var(--preview-link-hover);
+    border-bottom-style: solid;
+}
+
+/* ============================================================
+   POPOVER WINDOW
+   ============================================================ */
+.anki-preview-popup {
+    position: fixed;
+    z-index: 100000;
+    
+    width: max-content;
+    box-sizing: border-box;
+    word-wrap: break-word;
+
+    padding: 16px 20px;
+    background: var(--preview-bg);
+    color: var(--preview-fg);
+    border: 1px solid var(--preview-border);
+    border-radius: 8px;
+    box-shadow: 0 14px 38px var(--preview-shadow);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+    pointer-events: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Scrollbar */
+.anki-preview-popup::-webkit-scrollbar {
+    width: 6px;
+}
+.anki-preview-popup::-webkit-scrollbar-thumb {
+    background-color: var(--preview-scrollbar-thumb);
+    border-radius: 4px;
+}
+.anki-preview-popup::-webkit-scrollbar-track {
+    background: var(--preview-scrollbar-track);
+}
+
+/* Responsive Image Scaling */
+.anki-preview-popup img {
+    max-width: 100%;
+}
+
+/* Level Borders */
+.anki-preview-popup[data-depth="2"] {
+    border-color: var(--preview-depth-2);
+}
+.anki-preview-popup[data-depth="3"] {
+    border-color: var(--preview-depth-3);
+}
+
+/* ============================================================
+   FIELD BADGES & DIVIDERS
+   ============================================================ */
+
+
+.anki-preview-field-body > *:first-child {
+    margin-top: 0 !important;
+}
+.anki-preview-field-body > *:last-child {
+    margin-bottom: 0 !important;
+}

@@ -1,0 +1,19 @@
+{
+  "openDelay": 120,
+  "closeDelay": 150,
+  "gap": 2,
+  "viewportMargin": 24,
+  "enableInBrowser": true,
+  "maxWidth": "65vw",
+  "maxHeight": "52vh",
+  "minWidth": "320px",
+  "borderRadius": "8px",
+  "popupPadding": "16px 20px",
+  "fontSize": "14px",
+  "lineHeight": "1.5",
+  "theme": "auto",
+  "showFieldBadges": true,
+  "showFieldDividers": true,
+  "fieldBadgeFontSize": "8.5px",
+  "fieldBadgeOpacity": 0.45
+}
