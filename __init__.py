@@ -181,7 +181,7 @@ def on_webview_will_set_content(web_content, context):
     config_json = json.dumps(addon_config)
 
     # Inject settings as a global JS variable before scripts load
-    web_content.head += f"<script>window.__PAGE_PREVIEW_CONFIG__ = {config_json};</script>"
+    web_content.head += f"<script>window.__NOTE_PREVIEW_CONFIG__ = {config_json};</script>"
 
     web_content.css.append(f"/_addons/{addon_pkg}/web/preview.css?t={t}")
     web_content.js.append(f"/_addons/{addon_pkg}/web/preview.js?t={t}")

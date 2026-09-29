@@ -1,4 +1,4 @@
-# 🔍 Page Preview for Anki (Obsidian-Style Hovercards)
+# 🔍 Note Preview for Anki (Obsidian-Style Hovercards)
 
 [![Anki Version](https://img.shields.io/badge/Anki-23%2B%20%7C%2024%2B%20%7C%2025%2B%20%7C%2026%2B-blue.svg)](https://apps.ankiweb.net/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -17,7 +17,7 @@ Bring **Obsidian-style interactive page, section, and block previews** straight 
 - **🔄 Nested Popovers:** Open previews *inside* previews without losing your place—hovering back to the parent neatly closes the child.
 - **📐 Smart Positioning:** Popups automatically flip above or below your text and adapt to your screen size so they never run off-screen.
 - **🎨 Automatic Dark & Light Mode:** Seamlessly matches your active Anki theme with zero setup.
-- **⚙️ Easy Visual Settings:** Tweak popup sizes, font size, and hover timing from a dedicated menu under **Tools $\rightarrow$ Page Preview Settings...**.
+- **⚙️ Easy Visual Settings:** Tweak popup sizes, font size, and hover timing from a dedicated menu under **Tools $\rightarrow$ Note Preview Settings...**.
 
 
 ---

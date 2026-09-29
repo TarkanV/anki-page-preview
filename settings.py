@@ -29,7 +29,7 @@ DEFAULT_CONFIG = {
 class PagePreviewSettingsDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("Page Preview Settings")
+        self.setWindowTitle("Note Preview Settings")
         self.setMinimumWidth(440)
 
         addon_name = __name__.split('.')[0]
@@ -228,7 +228,7 @@ class PagePreviewSettingsDialog(QDialog):
 
         # Real-time push to the webview
         if mw.state == "review" and hasattr(mw, "reviewer") and mw.reviewer.web:
-            mw.reviewer.web.eval(f"window.__PAGE_PREVIEW_CONFIG__ = {json.dumps(new_config)};")
+            mw.reviewer.web.eval(f"window.__NOTE_PREVIEW_CONFIG__ = {json.dumps(new_config)};")
 
         self.accept()
 
@@ -238,6 +238,6 @@ def open_settings_dialog():
 
 def setup_menu():
     from aqt.qt import QAction
-    action = QAction("Page Preview Settings...", mw)
+    action = QAction("Note Preview Settings...", mw)
     action.triggered.connect(open_settings_dialog)
     mw.form.menuTools.addAction(action)

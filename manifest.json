@@ -1,6 +1,6 @@
 {
-  "name": "Page Preview (Obsidian Hovercards)",
-  "package": "anki_page_preview",
+  "name": " Note Preview (Obsidian Hovercards)",
+  "package": "Anki Note Preview",
   "min_point_version": 45,
   "max_point_version": 200
 }

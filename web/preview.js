@@ -1,4 +1,4 @@
-console.log("%c[Page Preview Addon] Initialized with Full Configuration Suite!", "color: #a6e3a1; font-weight: bold;");
+console.log("%c[Note Preview Addon] Initialized with Full Configuration Suite!", "color: #a6e3a1; font-weight: bold;");
 
 (function initSmartPreview() {
     let activePopups = [];
@@ -7,7 +7,7 @@ console.log("%c[Page Preview Addon] Initialized with Full Configuration Suite!",
     let pruneTimer = null;
 
     function getConfig() {
-        return window.__PAGE_PREVIEW_CONFIG__ || {};
+        return window.__NOTE_PREVIEW_CONFIG__ || {};
     }
 
     function getHeaderLevel(el) {
